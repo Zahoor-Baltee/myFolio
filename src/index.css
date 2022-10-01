@@ -1,13 +1,406 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* drawer */
+
+.image-box {
+  height: 200px;
+  width: 100%;
+  /* background: #000; */
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.image-outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: rgba(67, 58, 58, 0.162);
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.image-inner {
+  transform: rotate(-20deg);
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-image: url(./images/lol2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.name-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 26px;
+  color: #000;
+}
+.social-media-icons {
+  display: flex;
+  padding-left: 10%;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.main-list {
+  list-style: none;
+  padding: auto;
+}
+.main-list a{
+  color: #000;
+  text-decoration: none;
+}
+.main-list a:hover{
+  text-decoration:wavy;
+  color: antiquewhite;
+}
+.inner-list {
+  margin-top: 4%;
+  display: flex;
+}
+.inner-list a{
+
+  display: flex;
+}
+
+.inner-list p {
+  margin-left: 4%;
+  font-size: 18px;
+}
+.sticky-drawer {
+  height: 100vh;
+  position: fixed;
+  top: 1;
+  background: #0077B6 ;
+}
+.main-all-data {
+  margin-left: 24.5%;
+}
+
+/* drewer main part */
+
+.main-home-container {
+  height: 100vh;
+  width: 100%;
+  background-color: yellow;
+  background-image: url(./images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: fixed;
+  top: 1;
+}
+.name-data {
+  display: flex;
+  flex-direction: column;
+}
+.name-data h1 {
+  color: #fff;
+  font-size: 46px;
+  margin-top: 25%;
+  margin-left: 15%;
+}
+.name-data p {
+  color: #fff;
+  font-size: 26px;
+  margin-left: 15%;
+}
+
+/* about */
+.main-about-container {
+  height: 100vh;
+}
+.main-about-heading {
+  margin-top: 5%;
+  color: #173b6c;
+  font-size: 30px;
+  font-weight: 600;
+}
+.main-info {
+  color: #000;
+  margin-top: 3%;
+}
+.line {
+  margin-top: -10px;
+  height: 4px;
+  background-color: #149ddd;
+  width: 5%;
+}
+.image-box-about {
+  height: 320px;
+  width: 100%;
+  background-color: aqua;
+  background-image: url(./images/lol2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-list {
+  list-style-type: disc;
+}
+.about-list li {
+  margin-top: 6%;
+  color: rgb(38, 35, 35);
+}
+
+/* //skill */
+.main-skills-heading {
+  margin-top: 5%;
+  color: #149ddd;
+  font-size: 30px;
+  font-weight: 600;
+}
+.name-per {
+  display: flex;
+  justify-content: space-between;
+}
+.main-line {
+  height: 8px;
+  background-color: #149ddd;
+  border-radius: 2px;
+}
+.full-line {
+  height: 8px;
+  background-color: rgba(128, 128, 128, 0.127);
+  border-radius: 2px;
+}
+.filled-line-css {
+  height: 8px;
+  width: 90%;
+  background-color: #149ddd;
+  border-radius: 2px;
+}
+.filled-line-js {
+  height: 8px;
+  width: 75%;
+  background-color: #149ddd;
+  border-radius: 2px;
+}
+.filled-line-re {
+  height: 8px;
+  width: 80%;
+  background-color: #149ddd;
+  border-radius: 2px;
+}
+.filled-line-na {
+  height: 8px;
+  width: 70%;
+  background-color: #149ddd;
+  border-radius: 2px;
+}
+.filled-line-no {
+  height: 8px;
+  width: 60%;
+  background-color: #149ddd;
+  border-radius: 2px;
+}
+.main-skills-container {
+  background: #149ddd02;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* folio- */
+.folio-box1 {
+  height: 250px;
+  width: 100%;
+  background: rgba(128, 128, 128, 0.074);
+  background-image: url(./images/apple.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.folio-box2 {
+  height: 250px;
+  width: 100%;
+   background: rgba(128, 128, 128, 0.074);
+  background-image: url(./images/alibaba.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.folio-box3 {
+  height: 250px;
+  width: 100%;
+   background: rgba(128, 128, 128, 0.074);
+  background-image: url(./images/olx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.folio-box4 {
+  height: 250px;
+  width: 100%;
+   background: rgba(128, 128, 128, 0.074);
+  background-image: url(./images/pokimone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.folio-box5 {
+  height: 250px;
+  width: 100%;
+   background: rgba(128, 128, 128, 0.074);
+  background-image: url(./images/quizz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.folio-box6 {
+  height: 250px;
+  width: 100%;
+   background: rgba(128, 128, 128, 0.074);
+  background-image: url(./images/cal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+}
+.folio-box1:hover {
+  height: 250px;
+  width: 100%;
+ 
+  background: rgba(128, 128, 128, 0.327);
+  background-image: url(./images/apple.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+}
+.folio-box2:hover {
+  height: 250px;
+  width: 100%;
+ background: rgba(128, 128, 128, 0.327);
+  background-image: url(./images/alibaba.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+}
+.folio-box3:hover {
+  height: 250px;
+  width: 100%;
+ background: rgba(128, 128, 128, 0.327);
+  background-image: url(./images/olx.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+}
+.folio-box4:hover {
+  height: 250px;
+  width: 100%;
+ background: rgba(128, 128, 128, 0.327);
+  background-image: url(./images/pokimone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+}
+.folio-box5:hover {
+  height: 250px;
+  width: 100%;
+ background: rgba(128, 128, 128, 0.327);
+  background-image: url(./images/quizz.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+}
+.folio-box6:hover {
+  height: 250px;
+  width: 100%;
+ background: rgba(128, 128, 128, 0.327);
+  background-image: url(./images/cal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 32px 0px rgba(0,0,0,0.75);
+}
+.main-services-container {
+  background: #149ddd02;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.main-services-heading {
+  margin-top: 5%;
+  color: #149ddd;
+  font-size: 30px;
+  font-weight: 600;
+}
+.services-box {
+  height: 250px;
+  width: 100%;
+ background: rgba(128, 128, 128, 0.327);
+}
+/* contact */
+.location{
+  display: flex;
+}
+.iconsss{
+  margin-top: 2%;
+  height: 5%;
+  margin-right: 3%;
+  padding: 2%;
+  border-radius: 50%;
+  background: #149ddd;
+  color: #fff;
+}
+.contact-main{
+ 
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  width: 100%;
+  padding: 1%;
+}
+.contact-main-info{
+ 
+  box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.81);
+
+  padding: 1%;
+}
+
